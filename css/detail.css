@@ -1,0 +1,50 @@
+.desc h1{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 33px;
+	margin-bottom: 28px;
+}
+.desc li:first-of-type p{
+	margin-bottom: 30px;
+}
+.desc h3{
+	font-size: 14px;
+	text-indent: 2em;
+}
+.desc h4{
+	font-size: 12px;
+	font-family: "宋体";
+	font-weight: normal;
+	text-indent: 2em;
+}
+.desc p{
+	color: #8d8d8d;
+	font-size: 12px;
+	text-indent: 28px;
+	line-height: 20px;
+}
+.desc img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 12px auto;
+}
+.fenye{
+	width: 80%;
+	text-align: center;
+	margin: 25px auto;
+}
+.fenye ul{
+	display: inline-block;
+}
+.fenye ul li{
+	float: left;
+	padding: 5px;
+	margin-right: 3px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+.fenye ul li:hover{
+	background-color: #0000FF;
+	color: white;
+}

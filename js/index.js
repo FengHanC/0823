@@ -1,0 +1,64 @@
+var pre=document.getElementById('pre');
+var next=document.getElementById('next');
+var limg=document.querySelectorAll('.jumb ul li');
+var i=limg.length-1;
+var x=0,y=1,z=2;
+window.onload=function(){
+	setInterval(function(){
+		limg[x].style.left='50%';
+		limg[x].style.zIndex=-1;
+		limg[y].style.left='-50%';
+		limg[y].style.zIndex=-1;
+		limg[z].style.left=0;
+		limg[z].style.zIndex=0;
+		x++,y++,z++;
+		if(x>i)
+		{
+			x=0;
+		}
+		if(y>i){
+			y=0;
+		}
+		if(z>i){
+			z=0;
+		}
+		},5000)
+}
+pre.onclick=function(){
+	limg[x].style.left='50%';
+	limg[x].style.zIndex=-1;
+	limg[y].style.left='-50%';
+	limg[y].style.zIndex=-1;
+	limg[z].style.left=0;
+	limg[z].style.zIndex=0;
+	x++,y++,z++;
+	if(x>i)
+	{
+		x=0;
+	}
+	if(y>i){
+		y=0;
+	}
+	if(z>i){
+		z=0;
+	}
+}
+next.onclick=function(){
+	limg[y].style.left='50%';
+	limg[y].style.zIndex=-1;
+	limg[x].style.left=0;
+	limg[x].style.zIndex=0;
+	limg[z].style.left='-50%';
+	limg[z].style.zIndex=-1;
+	x--,y--,z--;
+	if(x<0)
+	{
+		x=i;
+	}
+	if(y<0){
+		y=i;
+	}
+	if(z<0){
+		z=i;
+	}
+}

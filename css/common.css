@@ -1,0 +1,238 @@
+header{
+	width: 100%;
+	color: white;
+	background-color: black;
+	font-size: 12px;
+	height: 38px;
+	line-height: 38px;
+}
+#menu{
+	display: none;
+}
+.menu{
+	width: 40px;
+	height: 26px;
+	background-color: #1F1F1F;
+	border: 1px solid #8D8D8D;
+	display: none;
+	cursor: pointer;
+	margin: 5px;
+}
+.menu span{
+	display: block;
+	border-bottom: 2px solid white;
+	margin: 5px;
+}
+.about{
+	float: right;
+}
+.etc{
+	margin-right: 30px;
+}
+.brand{
+	height: 95px;
+	background-color: white;
+	text-align: center;
+}
+.logo{
+	background: url(../img/logo.png) no-repeat center;
+	height: 95px;
+}
+nav{
+	background-color: #1f1f1f;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+.navbar{
+	display: inline-block;
+}
+.navbar li{
+	float: left;
+}
+.navbar li a{
+	color: white;
+	padding: 0 10px;
+	margin: 0 10px;
+}
+.navbar li a:hover{
+	background-color: #000000;
+}
+
+.com-link a{
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 12px;
+	border-right: 1px solid white;
+	color: white;
+}
+.com-link a:last-of-type{
+	border: 0;
+}
+.banner{
+	background-color: rgba(0,0,0,.5);
+}
+.jumb{
+	width: 100%;
+	text-align: center;
+	height: 530px;
+	line-height: 530px;
+	position: relative;
+	overflow: hidden;
+}
+.jumb label{
+	position: absolute;
+	width: 14%;
+	height: 100%;
+	color: white;
+	font-size: 81px;
+	cursor: pointer;
+}
+.left-btn{
+	left: 0;
+}
+.right-btn{
+	right: 0;
+}
+.jumb ul{
+	position: relative;
+	width: 72%;
+	height: 100%;
+	margin: 0 auto;
+}
+.jumb ul li{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all .3s ease-in-out;
+	left: 0;
+	top: 0;
+}
+.jumb ul li:first-of-type{
+	left: -50%;
+	z-index: -1;
+}
+.jumb ul li:last-of-type{
+	left: 50%;
+	z-index: -1;
+}
+.jumb ul li img{
+	display: block;
+	width: 980px;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+.location{
+	height: 35px;
+	line-height: 35px;
+	background-color: #989898;
+}
+.location p{
+	padding-left: 15px;
+	font-size: 12px;
+	background: url(../img/location_03.png) no-repeat left center;
+}
+footer{
+	background-color: black;
+}
+.footer-list{
+	font-size: 12px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	padding-bottom: 16px;
+}
+.footer-list span{
+	display: inline-block;
+}
+.footer-list ul{
+	text-align: right;
+}
+.footer-list ul li:last-of-type{
+	margin-top: 12px;
+}
+.middle-list{
+	padding: 0px 68px;
+    border-width: 0 1px;
+    border-color: white;
+    height: 80%;
+    border-style: solid;
+    text-align: center;
+}
+.middle-list p{
+	margin-bottom: 12px;
+}
+.right-list div{
+	text-align: center;
+	float: left;
+	margin-right: 50px;
+}
+.right-list div:last-of-type{
+	margin-right: 10px;
+}
+footer nav{
+	line-height: 45px;
+}
+@media screen and (max-width: 860px) {
+	nav{
+		height: auto;
+		line-height: 0;
+	}
+	nav .container{
+		width: 100%;
+	}
+	.navbar{
+		width: 100%;
+	}
+	.navbar li{
+		transform: scale(0);
+		height: 0;
+		float: none;
+		transition: height .3s ease-in-out;
+	}
+	.navbar li a{
+		padding: 0;
+		margin: 0;
+	}
+	.menu{
+		display: inline-block;
+	}
+	#menu:checked ~.navbar li{
+		transform: scale(1);
+		height: 45px;
+		line-height: 45px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.jumb{
+		height: 300px;
+		line-height: 300px;
+	}
+	.about{
+		display: none;
+	}
+	.footer-list .middle-list{
+		padding: 0;
+	}
+	.footer-list .right-list div{
+		margin: 0;
+	}
+	.right-list div:last-of-type{
+		margin: 0;
+	}
+}
+@media screen and (max-width:420px ) {
+	.navbar li{
+		width: 100%;
+		text-align: center;
+	}
+	.jumb{
+		height: 200px;
+		line-height: 200px;
+	}
+	.footer-list .right-list div{
+		display: none;
+	}
+}

@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+.container{
+	margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+	.container{
+		width: 980px;
+	}
+	.jumb .item{
+		width: 980px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.container{
+		width: 90%;
+	}
+}
